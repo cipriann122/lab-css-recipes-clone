@@ -100,10 +100,31 @@ main {
 }
 
 #ingredients li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 #ingredients img {
   width: 60%;
+}
+
+/* Directions section */
+
+#directions ol {
+  list-style-type: none;
+  margin: 0 0 3rem 2rem;
+}
+
+#directions ol > li {
+  counter-increment: listcounter;
+}
+
+#directions ol > li:before {
+  content: counter(listcounter) ")";
+}
+
+#directions li {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
 }
